@@ -8,14 +8,83 @@
     <link href="/favicon.png" rel="icon" type="image/x-icon">
     <link href="./styles.css" rel="stylesheet">
     <title> Typescript Boilerplate </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<section>
-    <h1> This is a Typescript Boilerplate! </h1>
-    <img alt="" src="assets/images/typescript-icon.svg">
+<section class="login">
+    <div class="login__holder">
+        <div class="login__holder--inputs">
+            <div class="login__holder--inputs--username">
+                <label for="username">Input Label</label><br>
+                <input type="text" id="username" name="username" placeholder="Placeholder" class="login__holder--inputs--input">
+            </div>
+            <div class="login__holder--inputs--password">
+                <label for="pwd">Input Label</label><br>
+                <input type="password" id="pwd"  name="pwd" value="" class="login__holder--inputs--input">
+            </div>
+        </div>
+        <div class="login__holder--subscribe">
+            <label class="login__holder--subscribe--switch">
+                <input type="checkbox">
+                <span class="slider--round"></span>
+            </label>
+            <p class="login__holder--subscribe--p">Subscribe to News</p>
+        </div>
+        <button type="submit" class="login__holder--inputs--button">
+            Sign In
+        </button>
+        <div class="login__holder--forgot">
+            <a href="url" class="login__holder--forgot--url">Forgot your password?</a>
+            <div class="login__holder--forgot--line"></div>
+            <p class="login__holder--forgot--p"> or continue with</p>
+            <div class="login__holder--forgot--buttons">
+                <button type="button" class="login__holder--forgot--buttons--button"><img alt="google" src="assets/images/google.svg"></button>
+                <button type="button" class="login__holder--forgot--buttons--button"><img alt="facebook" src="assets/images/facebook.svg"></button>
+            </div>
+        </div>
+    </div>
 </section>
-
-<script src="/scripts.js"></script>
+<section class="contactUs">
+    <div class="contactUs__holder">
+        <h1>Contact Us</h1>
+        <div class="contactUs__holder--inputs">
+            <div class="contactUs__holder--inputs--line">
+                <div>
+                    <label for="fname">First Name</label><br>
+                    <input id="fname" type="text" name="fname" class="contactUs__holder--inputs--input">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label><br>
+                    <input id="lname" type="text" name="lname" class="contactUs__holder--inputs--input">
+                </div>
+            </div>
+            <div class="contactUs__holder--inputs--line">
+                <div>
+                    <label for="tel">Phone Number</label><br>
+                    <input id="tel" type="text" name="tel" class="contactUs__holder--inputs--input">
+                </div>
+                <div>
+                    <label for="email">Input Label</label><br>
+                    <input id="email" type="text" name="email" class="contactUs__holder--inputs--input">
+                </div>
+            </div>
+        </div>
+        <div class="contactUs__holder--subscribe">
+            <label class="contactUs__holder--subscribe--checkbox">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+                Subscribe to News
+            </label>
+            <label class="contactUs__holder--subscribe--massage">
+                <textarea class="contactUs__holder--subscribe--massage--input"></textarea>
+            </label>
+        </div>
+        <div class="login__holder--submit">
+            <button type="submit" class="login__holder--submit--button">Submit</button>
+        </div>
+    </div>
+</section>
 </body>
 </html>
