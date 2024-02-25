@@ -144,6 +144,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
     }
     .contactUs__holder{
         height: 45rem;
@@ -177,9 +178,22 @@ body {
         height: 20rem;
         resize: none;
     }
+    .contactUs__holder--subscribe--checkbox{
+    }
+    .contactUs__holder--subscribe--checkbox input:checked ~ .checkbox{
+        background-color: #fb7818;
+    }
     .login__holder--submit{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+    }
+    .login__holder--submit--button{
+        width: 8rem;
+        height: 3rem;
+        border-style: none;
+        background-color: #651ffd;
+        color: white;
+        border-radius: 0.5rem;
     }
 }
