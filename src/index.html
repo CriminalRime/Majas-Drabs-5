@@ -18,11 +18,11 @@
         <div class="login__holder--inputs">
             <div class="login__holder--inputs--username">
                 <label for="username">Input Label</label><br>
-                <input type="text" id="username" name="username" placeholder="Placeholder" class="login__holder--inputs--input">
+                <input type="text" id="username" name="username" placeholder="Placeholder" class="login__holder--inputs--input" required>
             </div>
             <div class="login__holder--inputs--password">
                 <label for="pwd">Input Label</label><br>
-                <input type="password" id="pwd"  name="pwd" value="" class="login__holder--inputs--input">
+                <input type="password" id="pwd"  name="pwd" value="" class="login__holder--inputs--input" required>
             </div>
         </div>
         <div class="login__holder--subscribe">
@@ -53,21 +53,21 @@
             <div class="contactUs__holder--inputs--line">
                 <div>
                     <label for="fname">First Name</label><br>
-                    <input id="fname" type="text" name="fname" class="contactUs__holder--inputs--input">
+                    <input id="fname" type="text" name="fname" class="contactUs__holder--inputs--input" required>
                 </div>
                 <div>
                     <label for="lname">Last Name</label><br>
-                    <input id="lname" type="text" name="lname" class="contactUs__holder--inputs--input">
+                    <input id="lname" type="text" name="lname" class="contactUs__holder--inputs--input" required>
                 </div>
             </div>
             <div class="contactUs__holder--inputs--line">
                 <div>
                     <label for="tel">Phone Number</label><br>
-                    <input id="tel" type="text" name="tel" class="contactUs__holder--inputs--input">
+                    <input id="tel" type="text" name="tel" class="contactUs__holder--inputs--input" required>
                 </div>
                 <div>
                     <label for="email">Input Label</label><br>
-                    <input id="email" type="text" name="email" class="contactUs__holder--inputs--input">
+                    <input id="email" type="text" name="email" class="contactUs__holder--inputs--input" required>
                 </div>
             </div>
         </div>
@@ -87,14 +87,73 @@
     </div>
 </section>
 <section class="contactUs2">
-    <div class="contactUs2__info"></div>
+    <div class="contactUs2__info">
+        <p class="contactUs2__info--p">Contact information</p>
+        <p class="contactUs2__info--p">Here’s some additional support text to help set user expectations.</p>
+        <div class="contactUs2__info--tel">
+            <img src="assets/images/Phone.svg" alt="phone">
+            <p class="contactUs2__info--email--p">123-456-7890</p>
+
+        </div>
+        <div class="contactUs2__info--email">
+            <img src="assets/images/Mail.svg" alt="mail">
+            <p class="contactUs2__info--email--p">support@minerva.com</p>
+        </div>
+    </div>
     <div class="contactUs2__holder">
+        <h2>Contact Us</h2>
         <form class="contactUs2__holder--form">
-            <label> <input type="text"></label>
-            <label> <input type="text"></label>
-            <label> <input type="text"></label>
-            <label> <input type="text"></label>
+            <label class="contactUs2__holder--form--label"> Input Label <br> <input type="text" class="contactUs2__holder--form--label--input" required></label>
+            <label class="contactUs2__holder--form--label"> Input Label <br> <input type="text" class="contactUs2__holder--form--label--input" required></label>
+            <label class="contactUs2__holder--form--label"> Input Label <br> <input type="text" class="contactUs2__holder--form--label--input" required></label>
+            <label class="contactUs2__holder--form--label"> Input Label <br> <input type="text" class="contactUs2__holder--form--label--input" required></label>
+            <label class="contactUs2__holder--form--label"> Input Label <br> <input type="text" class="contactUs2__holder--form--label--biginput" required></label>
+            <label class="contactUs2__holder--form--massage">
+                Text Area Label
+                <textarea class="contactUs2__holder--form--massage--input"></textarea>
+            </label>
+            <div class="contactUs2__holder--form--submit">
+                <button type="submit" class="contactUs2__holder--form--submit--button">Submit</button>
+            </div>
         </form>
+    </div>
+</section>
+<section class="checkout">
+    <div class="checkout__holder">
+        <h3>Checkout</h3>
+        <div class="checkout__holder--order">
+            <div class="checkout__holder--order--your">
+                <p class="checkout__holder--order--delivery--T">Your Order</p>
+                <p class="checkout__holder--order--Tp">Eggshell Plant Pot</p>
+                <p class="checkout__holder--order--p">Size: Medium <br>Qty: 1 <br> $25.00 <br></p>
+            </div>
+            <div class="checkout__holder--order--delivery">
+                <p class="checkout__holder--order--delivery--T">Delivery Details</p>
+                <div class="checkout__holder--order--delivery--holder">
+                    <div class="checkout__holder--order--delivery--info">
+                        <p class="checkout__holder--order--Tp">Adam Sandler</p>
+                        <p class="checkout__holder--order--p">1234 Fake St<br>Milwaukee, WI 53203</p>
+                    </div>
+                    <div class="checkout__holder--order--delivery--shipping">
+                        <p class="checkout__holder--order--Tp">Shipping Speed</p>
+                        <p class="checkout__holder--order--p">$7.00 No Rush Shipping<br>Arrives by 1/16/22</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__holder--payment">
+            <h4>Payment Method</h4>
+            <form class="checkout__holder--payment--form">
+                <label class="">Input Label <input type="text" required></label>
+                <label class="">Input Label <input type="text" required></label>
+                <label class="">Input Label <input type="text" required></label>
+            </form>
+            <div class="checkout__holder--payment--continue">
+                <button type="submit" class="checkout__holder--payment--continue--button">
+                    Continue
+                </button>
+            </div>
+        </div>
     </div>
 </section>
 </body>
